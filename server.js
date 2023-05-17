@@ -8,8 +8,8 @@ const app = express();
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-app.use('/OTP-verification', generateOtp);
-app.use('/OTP-verification', verifyOtp);
+app.use('/email-verification', generateOtp);
+app.use('/email-verification', verifyOtp);
 
 app.listen(process.env.PORT, () => {
   console.log(`Server is running on port ${process.env.PORT}`);

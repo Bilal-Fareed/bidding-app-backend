@@ -6,7 +6,7 @@ const {sendMail} = require('../middlewares/email_sender')
 var otpGenerator = require('otp-generator');
 
 
-router.post('/generateOTP', async (req, res) => {
+router.post('/send-email', async (req, res) => {
 
     function AddMinutesToDate(date, minutes) {
         return new Date(date.getTime() + minutes * 60000);

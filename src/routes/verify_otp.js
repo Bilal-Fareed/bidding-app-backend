@@ -33,7 +33,7 @@ var dates = {
     }
 }
 
-router.post('/verifyOTP', async (req, res) => {
+router.post('/verify-email', async (req, res) => {
 
     try {
         console.log("Requested URL: /verifyOTP")
