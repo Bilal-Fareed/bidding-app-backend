@@ -36,7 +36,7 @@ var dates = {
 router.post('/verify-email', async (req, res) => {
 
     try {
-        console.log("Requested URL: /verifyOTP")
+        console.log("Requested URL: /verify-email")
 
         const { otp, email} = req.body;
         var currentDate = new Date();

@@ -13,7 +13,7 @@ router.post('/send-email', async (req, res) => {
     }
 
     try {
-        console.log("Request URL: /generateOTP")
+        console.log("Request URL: /send-email")
         //Generating OTP
         const otp = otpGenerator.generate(6, { digits: true, lowerCaseAlphabets: false, upperCaseAlphabets: false, specialChars: false });
         const now = new Date();

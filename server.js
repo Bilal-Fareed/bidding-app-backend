@@ -1,7 +1,7 @@
 require('dotenv').config();
 const express = require('express');
-const generateOtp = require('./src/routes/generate_otp.js')
-const verifyOtp = require('./src//routes/verify_otp.js');
+const generateOtp = require('./src/routes/send_email.js')
+const verifyOtp = require('./src/routes/verify_email.js');
 
 const app = express();
 
